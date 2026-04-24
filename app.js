@@ -336,6 +336,7 @@ async function login() {
   } catch (error) {
     console.error(error);
     setLoginMessage("warn", `Login error: ${error.code}`);
+console.error("Firebase login error:", error);
   }
 }
 async function logout() {
